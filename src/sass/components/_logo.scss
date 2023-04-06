@@ -1,0 +1,35 @@
+.logo {
+  display: flex;
+  text-decoration: none;
+
+  &:hover,
+  &:focus {
+    outline: none;
+
+    .logo__svg {
+      stroke: getColor('orange-text');
+    }
+
+    .logo__title {
+      color: getColor('orange-text');
+    }
+  }
+
+  &__svg {
+    fill: none;
+    stroke: getColor('white');
+
+    transition: stroke $transition;
+  }
+
+  &__title {
+    color: getColor('white');
+    font-weight: 500;
+    font-size: 30px;
+    line-height: calc(35 / 30);
+
+    display: none;
+
+    transition: color $transition;
+  }
+}

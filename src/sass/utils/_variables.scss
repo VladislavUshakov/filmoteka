@@ -1,0 +1,16 @@
+$colors: (
+  'white': #ffffff,
+  'black': #000000,
+  'red': #ff001b,
+  'orange-text': #ff6b08,
+  'orange-background': #ff6b01,
+  'light-grey': #f7f7f7,
+  'grey': #8c8c8c,
+  'dark-grey': #545454,
+);
+
+@function getColor($key) {
+  @return map-get($colors, $key);
+}
+
+$transition: 250ms ease-in-out;
